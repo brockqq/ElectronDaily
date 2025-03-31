@@ -5,14 +5,18 @@ import Toys from './pages/Toys';
 import Diary from './pages/Diary';
 import Wishlist from './pages/Wishlist';
 import Reminders from './pages/Reminders';
-
+import Category from './pages/Category';
 const App = () => {
   return (
     <Router>
       <div style={{ padding: 20 }}>
         <h1>J50 04 App</h1>
         <nav style={{ marginBottom: 20 }}>
-          <Link to="/">記帳</Link> | <Link to="/toys">玩具</Link> | <Link to="/diary">日記</Link> | <Link to="/wishlist">願望</Link> | <Link to="/reminders">提醒</Link>
+          <Link to="/">記帳</Link> | <Link to="/toys">玩具</Link> | 
+          <Link to="/diary">日記</Link> | 
+          <Link to="/wishlist">願望</Link> | 
+          <Link to="/reminders">提醒</Link>|
+          <Link to="/categories">分類維護</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Accounting />} />
@@ -20,6 +24,7 @@ const App = () => {
           <Route path="/diary" element={<Diary />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/reminders" element={<Reminders />} />
+          <Route path="/categories" element={<Category />} />
         </Routes>
       </div>
     </Router>
