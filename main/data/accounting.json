@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1743429130279,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "50",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429149560,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429150055,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429150238,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429151211,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429151456,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429151975,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429152440,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429156618,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "33",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429157479,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429157735,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429158789,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429158949,
+    "type": "expense",
+    "category": "food",
+    "amount": 100,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429256532,
+    "type": "expense",
+    "category": "food",
+    "amount": 0,
+    "note": "",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429414430,
+    "type": "expense",
+    "category": "food",
+    "amount": 0,
+    "note": "測試",
+    "date": "2025-03-31"
+  },
+  {
+    "id": 1743429545044,
+    "type": "expense",
+    "category": "food",
+    "amount": 602,
+    "note": "dd",
+    "date": "2025-03-31"
+  }
+]
