@@ -56,28 +56,49 @@ const Accounting = () => {
       <div style={{ color: 'red' }}>{error}</div>
       <ul>
         <li>
-      <input value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="金額" />      
-      <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="">請選擇分類</option>
-        {categories.map(c => (
-          <option key={c.id} value={c.name}>{c.name}</option>
-        ))}
-      </select>
-      <DatePicker selected={date} onChange={(d) => setDate(d)} dateFormat="yyyy-MM-dd" />
-      </li>
-      <li>
-      
-     
-      <input style={{ width: '100%' }} value={note} onChange={(e) => setNote(e.target.value)} placeholder="備註" />
-      </li>
+          <input value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="金額" />
+          <select value={category} onChange={(e) => setCategory(e.target.value)}>
+            <option value="">請選擇分類</option>
+            {categories.map(c => (
+              <option key={c.id} value={c.name}>{c.name}</option>
+            ))}
+          </select>
+          <DatePicker selected={date} onChange={(d) => setDate(d)} dateFormat="yyyy-MM-dd" />
+        </li>
+        <li>
+
+
+          <input style={{ width: '100%' }} value={note} onChange={(e) => setNote(e.target.value)} placeholder="備註" />
+        </li>
       </ul>
       <button onClick={addEntry}>新增支出</button>
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>金額</th>
+            <th>分類</th>
+            <th>備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          {entries.sort((a, b) => {
+            // 合併日期和 id 做排序
+            const aTime = new Date(a.date).getTime() + a.id;
+            const bTime = new Date(b.date).getTime() + b.id;
+            return bTime - aTime; // 倒序排列
+          }).map(t => (
+            <tr key={t.id}>
+              <td>{t.date}</td>
+              <td>{t.amount}</td>
+              <td>{t.category}</td>
+              <td>{t.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
 
-      <ul>
-        {entries.map(e => (
-          <li key={e.id}>{e.date} - {e.amount} - {e.category} - {e.note}</li>
-        ))}
-      </ul>
+
     </div>
   );
 };

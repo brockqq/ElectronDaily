@@ -73,3 +73,17 @@ button:focus-visible {
 .full-width {
   width: 100%;
 }
+table {
+  border: 1px solid #ccc;
+  margin-top: 16px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #55d6ec;
+}
