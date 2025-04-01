@@ -4,6 +4,9 @@ import Toys from './pages/Toys';
 import Diary from './pages/Diary';
 import Wishlist from './pages/Wishlist';
 import Reminders from './pages/Reminders';
+import Categories from './pages/Category';
+import ToyCtegories from './pages/ToyCategory';
+import ToyBrand from './pages/ToyBrand';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('accounting');
@@ -23,6 +26,9 @@ const App = () => {
       case 'diary': return <Diary />;
       case 'wishlist': return <Wishlist />;
       case 'reminders': return <Reminders />;
+      case 'categories': return <Categories />;
+      case 'ToyCtegories': return <ToyCtegories />;
+      case 'ToyBrand': return <ToyBrand />;
       default: return <Accounting />;
     }
   };

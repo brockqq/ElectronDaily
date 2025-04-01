@@ -40,6 +40,21 @@ function createWindow() {
           click: () => win.webContents.send('navigate', 'reminders')
         }
       ]
+    },
+    {
+      label: '維護',
+      submenu: [
+        {
+          label: '記帳分類',
+          click: () => win.webContents.send('navigate', 'categories')
+        },{
+          label: '玩具品牌',
+          click: () => win.webContents.send('navigate', 'ToyBrand')
+        },{
+          label: '玩具類型',
+          click: () => win.webContents.send('navigate', 'ToyCtegories')
+        },
+      ]
     }
   ];
 
