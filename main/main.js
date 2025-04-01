@@ -2,6 +2,19 @@ const { app, BrowserWindow, Menu } = require('electron');
 const path = require('path');
 require('./ipcHandlers');
 
+
+
+function openExternalPage(url) {
+  const externalWin = new BrowserWindow({
+    width: 1000,
+    height: 700,
+    webPreferences: {
+      nodeIntegration: false, // 不需要 Node.js 功能
+    }
+  });
+
+  externalWin.loadURL(url);
+}
 function createWindow() {
   const win = new BrowserWindow({
     width: 1000,
@@ -12,7 +25,6 @@ function createWindow() {
   });
 
   win.loadURL('http://localhost:5173');
-  win.webContents.openDevTools();
 
   // 原生選單
   const template = [
@@ -54,6 +66,15 @@ function createWindow() {
           label: '玩具類型',
           click: () => win.webContents.send('navigate', 'ToyCtegories')
         },
+      ]
+    },
+    {
+      label: '商城',
+      submenu: [
+        {
+          label: 'momo商城',
+          click: () => openExternalPage('https://www.momoshop.com.tw/category/LgrpCategory.jsp?l_code=4003200000')
+        }
       ]
     }
   ];

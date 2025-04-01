@@ -10,7 +10,11 @@ const Accounting = () => {
   const [category, setCategory] = useState('');
   const [date, setDate] = useState(new Date());
   const [error, setError] = useState('');
+  const pad = (n) => n.toString().padStart(2, '0');
 
+  const getLocalDateString = (date) => {
+    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+  };
   useEffect(() => {
     window.api.invoke('get-data', 'accounting.json').then(setEntries);
     window.api.invoke('get-data', 'categories.json').then(setCategories);
@@ -32,7 +36,7 @@ const Accounting = () => {
       category,
       amount: parseFloat(amount),
       note,
-      date: date.toISOString().split('T')[0]
+      date: getLocalDateString(date)
     };
 
     const updated = [...entries, newEntry];
