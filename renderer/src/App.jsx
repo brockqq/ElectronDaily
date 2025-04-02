@@ -8,6 +8,7 @@ import Categories from './pages/Category';
 import ToyCtegories from './pages/ToyCategory';
 import ToyBrand from './pages/ToyBrand';
 import EpubReader  from './pages/EpubReader';
+import EpubReadiumReader from './pages/ReadiumReader'
 const App = () => {
   const [currentPage, setCurrentPage] = useState('accounting');
 
@@ -30,6 +31,7 @@ const App = () => {
       case 'ToyCtegories': return <ToyCtegories />;
       case 'ToyBrand': return <ToyBrand />;
       case 'epub': return <EpubReader  />;    
+      case 'readium': return <EpubReadiumReader  />;    
       default: return <Accounting />;
     }
   };

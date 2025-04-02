@@ -1,9 +1,12 @@
 const { app, BrowserWindow, Menu,ipcMain,dialog } = require('electron');
 const path = require('path');
 const fs = require('fs');
+const { Server } = require('r2-streamer-js');
+
 require('./ipcHandlers');
 
 
+let streamer;
 
 function openExternalPage(url) {
   const externalWin = new BrowserWindow({
@@ -84,6 +87,10 @@ function createWindow() {
         {
           label: 'epubjs',
           click: () => win.webContents.send('navigate', 'epub')
+        },
+        {
+          label: 'readium',
+          click: () => win.webContents.send('navigate', 'readium')
         }
       ]
     }
@@ -91,13 +98,20 @@ function createWindow() {
 
   const menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);
+  streamer = new Server();
+  streamer.start(3001).then(() => {
+    console.log("📘 Readium streamer started at http://localhost:3001");
+  });
 }
 
 ipcMain.handle('read-epub-file', async (_, filePath) => {
   const buffer = fs.readFileSync(filePath);
   return buffer;
 });
-
+ipcMain.handle('open-epub', async (_, filePath) => {
+  const publication = await streamer.loadOrGet(filePath);
+  return streamer.publicationsServerUrl() + '/' + publication.identifier + '/manifest.json';
+});
 ipcMain.handle('dialog:open', async () => {
   const result = await dialog.showOpenDialog({
     filters: [{ name: 'EPUB files', extensions: ['epub'] }],
