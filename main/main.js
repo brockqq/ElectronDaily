@@ -1,5 +1,6 @@
-const { app, BrowserWindow, Menu } = require('electron');
+const { app, BrowserWindow, Menu,ipcMain,dialog } = require('electron');
 const path = require('path');
+const fs = require('fs');
 require('./ipcHandlers');
 
 
@@ -25,7 +26,7 @@ function createWindow() {
   });
 
   win.loadURL('http://localhost:5173');
-
+  win.webContents.openDevTools();
 
   const template = [
     {
@@ -92,4 +93,16 @@ function createWindow() {
   Menu.setApplicationMenu(menu);
 }
 
+ipcMain.handle('read-epub-file', async (_, filePath) => {
+  const buffer = fs.readFileSync(filePath);
+  return buffer;
+});
+
+ipcMain.handle('dialog:open', async () => {
+  const result = await dialog.showOpenDialog({
+    filters: [{ name: 'EPUB files', extensions: ['epub'] }],
+    properties: ['openFile']
+  });
+  return result.filePaths[0];
+});
 app.whenReady().then(createWindow);
