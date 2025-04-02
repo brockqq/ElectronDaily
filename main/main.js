@@ -26,7 +26,7 @@ function createWindow() {
 
   win.loadURL('http://localhost:5173');
 
-  // 原生選單
+
   const template = [
     {
       label: '功能',
@@ -74,6 +74,15 @@ function createWindow() {
         {
           label: 'momo商城',
           click: () => openExternalPage('https://www.momoshop.com.tw/category/LgrpCategory.jsp?l_code=4003200000')
+        }
+      ]
+    },
+    {
+      label: '閱讀功能',
+      submenu: [
+        {
+          label: 'epubjs',
+          click: () => win.webContents.send('navigate', 'epub')
         }
       ]
     }
