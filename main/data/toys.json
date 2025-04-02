@@ -1,22 +1,65 @@
 [
   {
-    "id": 1743429135757,
-    "name": "666",
-    "purchase_date": "2025-03-31"
+    "id": 1743466641492,
+    "name": "貝利亞",
+    "category": "完成品(SHF)",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
   },
   {
-    "id": 1743429572071,
-    "name": "",
-    "purchase_date": "2025-03-31"
+    "id": 1743466653809,
+    "name": "甲斐之虎",
+    "category": "完成品(合金)",
+    "brand": "魔壽",
+    "purchase_date": "2025-04-01"
   },
   {
-    "id": 1743429572811,
-    "name": "",
-    "purchase_date": "2025-03-31"
+    "id": 1743466861592,
+    "name": "卡美拉",
+    "category": "完成品(SHF)",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
   },
   {
-    "id": 1743429573027,
-    "name": "",
-    "purchase_date": "2025-03-31"
+    "id": 1743466906621,
+    "name": "暗黑破壞神",
+    "category": "組裝",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
+  },
+  {
+    "id": 1743466917726,
+    "name": "海牛",
+    "category": "組裝",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
+  },
+  {
+    "id": 1743466929137,
+    "name": "RG 勇者王GGG",
+    "category": "組裝",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
+  },
+  {
+    "id": 1743466944691,
+    "name": "HG 超神龍",
+    "category": "組裝",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
+  },
+  {
+    "id": 1743467027199,
+    "name": "真骨雕 超人力霸王 TIGA",
+    "category": "完成品(SHF)",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
+  },
+  {
+    "id": 1743467048009,
+    "name": "真骨雕 假面騎士 black",
+    "category": "完成品(SHF)",
+    "brand": "萬代",
+    "purchase_date": "2025-04-01"
   }
 ]

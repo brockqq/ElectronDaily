@@ -1,130 +1,66 @@
 [
   {
-    "id": 1743429130279,
+    "id": 1743457826975,
     "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "50",
+    "category": "晚餐",
+    "amount": 400,
+    "note": "晚餐水餃",
+    "date": "2025-03-30"
+  },
+  {
+    "id": 1743465648509,
+    "type": "expense",
+    "category": "早餐",
+    "amount": 65,
+    "note": "早餐",
+    "date": "2025-04-01"
+  },
+  {
+    "id": 1743465668803,
+    "type": "expense",
+    "category": "早餐",
+    "amount": 45,
+    "note": "早安廚房 火腿蛋吐司",
+    "date": "2025-04-01"
+  },
+  {
+    "id": 1743466121047,
+    "type": "expense",
+    "category": "咖啡",
+    "amount": 77,
+    "note": "全家咖啡",
+    "date": "2025-04-01"
+  },
+  {
+    "id": 1743546586145,
+    "type": "expense",
+    "category": "晚餐",
+    "amount": 360,
+    "note": "鹹酥雞",
     "date": "2025-03-31"
   },
   {
-    "id": 1743429149560,
+    "id": 1743546650363,
     "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
+    "category": "午餐",
+    "amount": 150,
+    "note": "大叔",
     "date": "2025-03-31"
   },
   {
-    "id": 1743429150055,
+    "id": 1743546661389,
     "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
+    "category": "午餐",
+    "amount": 123,
+    "note": "133",
+    "date": "2025-04-01"
   },
   {
-    "id": 1743429150238,
+    "id": 1743551122566,
     "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429151211,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429151456,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429151975,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429152440,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429156618,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "33",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429157479,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429157735,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429158789,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429158949,
-    "type": "expense",
-    "category": "food",
-    "amount": 100,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429256532,
-    "type": "expense",
-    "category": "food",
-    "amount": 0,
-    "note": "",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429414430,
-    "type": "expense",
-    "category": "food",
-    "amount": 0,
-    "note": "測試",
-    "date": "2025-03-31"
-  },
-  {
-    "id": 1743429545044,
-    "type": "expense",
-    "category": "food",
-    "amount": 602,
-    "note": "dd",
-    "date": "2025-03-31"
+    "category": "早餐",
+    "amount": 65,
+    "note": "早餐",
+    "date": "2025-04-02"
   }
 ]
